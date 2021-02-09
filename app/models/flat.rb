@@ -3,4 +3,6 @@ class Flat < ApplicationRecord
   validates :address, presence: true
   validates :description, presence: true, length: { minimum: 10 }
   validates :occupancy, presence: true
+
+  has_many :bookings
 end
