@@ -1,6 +1,8 @@
 <h1>Create Booking</h1>
 
 <%= simple_form_for [@flat, @booking] do |f| %>
-
+<%= f.input :date_from %>
+<%= f.input :date_to %>
+<%= f.input :guests %>
 <%= f.submit %>
 <% end %>
