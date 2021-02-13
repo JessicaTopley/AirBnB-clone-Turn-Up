@@ -20,6 +20,11 @@ class FlatsController < ApplicationController
     @flat = Flat.find(params[:id])
     @booking = Booking.new
   end
+  
+  def destroy
+    @flat.destroy
+    redirect_to flats_path
+  end
 
   def edit
     @flat = Flat.find(params[:id])
