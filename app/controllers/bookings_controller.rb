@@ -7,9 +7,14 @@ class BookingsController < ApplicationController
   def create
     @booking = Booking.new(booking_params)
     @flat = Flat.find(params[:flat_id])
+
     @booking.user = current_user
     @booking.flat = @flat
     # @booking.user_id?
+    
+    @booking.user = current_user
+    @booking.flat = @flat
+
     if @booking.save
       redirect_to flat_path(@flat)
     else
