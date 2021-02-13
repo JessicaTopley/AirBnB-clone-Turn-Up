@@ -5,4 +5,5 @@ class Flat < ApplicationRecord
   validates :occupancy, presence: true
 
   has_many :bookings
+  belongs_to :user
 end
