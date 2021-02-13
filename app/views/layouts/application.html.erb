@@ -12,7 +12,11 @@
   </head>
 
   <body>
+    <!-- nav bar -->
     <%= render 'shared/navbar' %>
     <%= yield %>
+    <!-- devise alerts -->
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
   </body>
 </html>
