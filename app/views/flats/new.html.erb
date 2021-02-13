@@ -5,5 +5,8 @@
 <%= f.input :address %>
 <%= f.input :description %>
 <%= f.input :occupancy %>
+<% if current_user %>
+<%= f.hidden_field :user_id, value: current_user.id%>
+<% end %>
 <%= f.submit %>
 <% end %>
