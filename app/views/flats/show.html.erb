@@ -6,3 +6,5 @@
   </p>
 
 <%= link_to 'New Booking',  new_flat_booking_path(@flat) %>
+<%= link_to  "Delete", flat_path(@flat), class: 'button',
+            method: :delete, data: { confirm: 'Are you sure?' } %>

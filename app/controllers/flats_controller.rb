@@ -21,6 +21,11 @@ class FlatsController < ApplicationController
     @booking = Booking.new
   end
 
+  def destroy
+    @flat.destroy
+    redirect_to flats_path
+  end
+
   private
 
   def flat_params
