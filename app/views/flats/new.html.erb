@@ -6,5 +6,8 @@
 <%= f.input :description %>
 <%= f.input :occupancy %>
 <%= f.input :photo, as: :file %>
+<% if current_user %>
+<%= f.hidden_field :user_id, value: current_user.id%>
+<% end %>
 <%= f.submit %>
 <% end %>
