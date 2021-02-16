@@ -1,1 +1,14 @@
-<h1> <%= @user.first_name %> </h1>
+<h1><%= @user.first_name %> <%= @user.last_name %></h1>
+
+<h2>My Bookings</h2>
+<% @user.bookings.each do |booking| %>
+  <p><%= booking.flat.name %> <%= booking.flat.address %></p>
+  <p>Booked from <%= booking.date_from %> to <%= booking.date_to %></p>
+  <p>for <%= booking.guests %> guests</p>
+<% end %>
+
+<h2>My Flats</h2>
+<% @user.flats.each do |flat| %>
+  <p><%= flat.name %> <%= flat.address %></p>
+  <p>Listed occupancy: <%= flat.occupancy %></p>
+<% end %>
