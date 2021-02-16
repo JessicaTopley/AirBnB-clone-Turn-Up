@@ -1,13 +1,30 @@
 <h1>All Flats</h1>
-
 <%= link_to 'Create',  new_flat_path %>
-<br>
+<%# 
+<%= link_to 'Create',  new_flat_path %>
+<%# <br>
 
 <% @flats.each do |flat| %>
-  <p> <%= link_to flat.name, flat_path(flat) %> <br>
-  <%= flat.address %> <br>
-  <%= flat.description %> <br>
-  <%= flat.occupancy %>
-  </p>
+  <%# <p class="card-title"> <%= link_to flat.name, flat_path(flat) %> 
+  <%# <%= flat.address %> 
+  <%# <%= flat.description %> 
+  <%# <%= flat.occupancy %> 
+  <%# </p> %>
 
-<% end %>
+<%# <% end %> 
+
+<section class="container">
+ <% @flats.each do |flat| %>
+  <div class="card col-lg-12 col-sm-6 mx-auto" style="width: 18rem;">
+    <img src="https://source.unsplash.com/200x200/?cocktails/" class="card-img-top" alt="...">
+    <div class="card-body">
+      <p class="card-title"> <%= link_to flat.name, flat_path(flat) %> <br>
+      <%= flat.address %> <br>
+      <%= flat.description %> <br>
+      <%= flat.occupancy %>
+      </p>
+      <%= link_to "Flat Details", flat_path(flat), class: "btn btn-primary btn-lg" %>
+    </div>
+  </div>
+  <% end %>
+</section>

@@ -1,0 +1,54 @@
+$black: #393939;
+$off-white: #EDEDED;
+$dark-gray: #666;
+$medium-gray: #6c757d;
+$light-gray: #c2c2c2;
+$blue: #237CBE;
+$light-blue: lighten($blue, 40%);
+$orange: #E8890C;
+$yellow: #ffc107;
+$light-yellow: #FFC;
+$red: #dc3545;
+
+
+// Custom CSS
+
+header {
+	padding: 0.5rem;
+	margin-bottom: 3rem;
+  height: 100px;
+  background-color: $light-gray;
+}
+
+
+footer {
+	background: $light-gray;
+  color: $black;
+	text-align: center;
+	margin-top: 3rem;
+  padding-top: 2rem;
+	padding-bottom: 2rem;
+}
+
+// Main body
+.main {
+  width: 1200px;
+  margin: 10px auto;
+}
+
+// Flats index page
+.container {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+  width: 1200px;
+  margin: 10px auto;
+}
+
+.card {
+  padding: 10px;
+}
+
+.card-body {
+  background-color: #DBD9D8;
+}

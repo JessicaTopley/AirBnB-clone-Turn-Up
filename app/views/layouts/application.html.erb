@@ -13,10 +13,14 @@
 
   <body>
     <!-- nav bar -->
-    <%= render 'shared/navbar' %>
-    <%= yield %>
+    <%= render 'layouts/header' %>
+    <section class="main">
+      <%= yield %>
+    </section>
+    
     <!-- devise alerts -->
     <p class="notice"><%= notice %></p>
     <p class="alert"><%= alert %></p>
+    <%= render 'layouts/footer' %>
   </body>
 </html>
