@@ -1,6 +1,6 @@
 <h1 class="flat_heading">Available Flats</h1>
 
-<section class="container">
+<section class="container-custom">
  <% @flats.each do |flat| %>
   <div class="card col-lg-12 col-sm-6 mx-auto" style="width: 24rem;">
     <%= cl_image_tag flat.photo.key, height: 300, crop: :fill %>
