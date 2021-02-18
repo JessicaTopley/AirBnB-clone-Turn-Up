@@ -36,8 +36,8 @@ body {
 
 header {
 	padding: 0.5rem;
-	margin-bottom: 3rem;
-  height: 100px;
+	// margin-bottom: 3rem;
+  // height: 100px;
   background-color: $primary;
 }
 
@@ -53,17 +53,17 @@ footer {
 
 // INDEX PAGE 
 // Main body 
-.main {
-  width: 1200px;
-  margin: 10px auto;
-}
+// .main {
+//   width: 1200px;
+//   margin: 10px auto;
+// }
 
 // Flats index page
 
 .flat_heading {
   text-align: center;
 }
-.container {
+.container-custom {
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(3, 1fr);
@@ -72,12 +72,12 @@ footer {
 }
 
 @media (max-width: 992px) {
-  .container{
+  .container-custom{
     grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 768px) {
-  .container{
+  .container-custom{
     grid-template-columns: 1fr;
   }
 }
