@@ -62,7 +62,7 @@ user4 = User.create!(email: "martin@gmail.com", password: "123456", first_name: 
   flat.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
   flat.save
 
-  file = URI.open('https://images.unsplash.com/photo-1593853963555-013dbf33c060?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw2NjM5NjI3Mnx8ZW58MHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60.png')
+  file = URI.open('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?ixid=MXwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NXwyNTg1Mjc2NXx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60.png')
   flat = Flat.new(
     name: "Lovely flat in London",
     address: "11 York Way, London",
@@ -84,7 +84,7 @@ user4 = User.create!(email: "martin@gmail.com", password: "123456", first_name: 
   flat.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
   flat.save
 
-  file = URI.open('https://images.unsplash.com/photo-1567899483143-1dfc0f23c373?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXw2OTAzNDg3OHx8ZW58MHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60.png')
+  file = URI.open('https://images.unsplash.com/photo-1585821570368-53a593a002be?ixid=MXwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTd8MjU4NTI3NjV8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60.png')
   flat = Flat.new(
     name: "Beautiful flat in Tottenham",
     address: "36 Park View Road, London",
@@ -105,63 +105,6 @@ user4 = User.create!(email: "martin@gmail.com", password: "123456", first_name: 
   )
   flat.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
   flat.save
-
-
-# user1 = User.create!(email: "jessica@gmail.com", password: "123456", first_name: "Jessica", last_name: "Topley")
-# 2.times do
-#   file = URI.open('https://source.unsplash.com/collection/4772117')
-#   flat = Flat.new(
-#     name: ["Lovely flat in #{Faker::Address.city}", "Flat on #{Faker::Address.street_name}"].sample,
-#     address: Faker::Address.full_address,
-#     description: "Great flat with #{rand(3..6)} rooms, #{Faker::House.room}, #{Faker::House.room} and #{Faker::House.room}. Fully furnished.",
-#     occupancy: rand(1..8),
-#     user: user1
-#   )
-#   flat.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
-#   flat.save!
-# end
-
-# user2 = User.create!(email: "miranda@gmail.com", password: "123456", first_name: "Miranda", last_name: "Frudd")
-# 2.times do
-#   file = URI.open('https://source.unsplash.com/collection/2405087')
-#   flat = Flat.new(
-#     name: ["Lovely flat in #{Faker::Address.city}", "Flat on #{Faker::Address.street_name}"].sample,
-#     address: Faker::Address.full_address,
-#     description: "Great flat with #{rand(3..6)} rooms, #{Faker::House.room}, #{Faker::House.room} and #{Faker::House.room}. Fully furnished.",
-#     occupancy: rand(1..8),
-#     user: user2
-#   )
-#   flat.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
-#   flat.save
-# end
-
-# user3 = User.create!(email: "catherine@gmail.com", password: "123456", first_name: "Catherine", last_name: "Maclellan")
-# 2.times do
-#   file = URI.open('https://source.unsplash.com/collection/1126883')
-#   flat = Flat.new(
-#     name: ["Lovely flat in #{Faker::Address.city}", "Flat on #{Faker::Address.street_name}"].sample,
-#     address: Faker::Address.full_address,
-#     description: "Great flat with #{rand(3..6)} rooms, #{Faker::House.room}, #{Faker::House.room} and #{Faker::House.room}. Fully furnished.",
-#     occupancy: rand(1..8),
-#     user: user3
-#   )
-#   flat.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
-#   flat.save
-# end
-
-# user4 = User.create!(email: "martin@gmail.com", password: "123456", first_name: "Martin", last_name: "Mwaka")
-# 2.times do
-#   file = URI.open('https://source.unsplash.com/collection/10065097')
-#   flat = Flat.new(
-#     name: ["Lovely flat in #{Faker::Address.city}", "Flat on #{Faker::Address.street_name}"].sample,
-#     address: Faker::Address.full_address,
-#     description: "Great flat with #{rand(3..6)} rooms, #{Faker::House.room}, #{Faker::House.room} and #{Faker::House.room}. Fully furnished.",
-#     occupancy: rand(1..8),
-#     user: user4
-#   )
-#   flat.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
-#   flat.save
-# end
 
   puts "#{Flat.count} flats created"
 
