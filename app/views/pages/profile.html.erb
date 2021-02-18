@@ -31,6 +31,9 @@
             <p><strong><%= flat.name %></strong></p>
             <p><%= flat.address %></p>
             <p>Listed occupancy: <%= flat.occupancy %></p>
+            <%= link_to 'Edit Flat', edit_flat_path(flat) %>
+            <%= link_to  "Delete", flat_path(flat), class: 'button',
+                method: :delete, data: { confirm: 'Are you sure?' } %>
           </div>
         </div>
       <% end %>
