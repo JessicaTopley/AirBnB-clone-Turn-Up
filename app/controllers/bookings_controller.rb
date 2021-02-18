@@ -12,7 +12,7 @@ class BookingsController < ApplicationController
     @booking.flat = @flat
     @booking.user_id?
     if @booking.save
-      redirect_to flat_path(@flat)
+      redirect_to pages_profile_path
     else
       render :new
     end
