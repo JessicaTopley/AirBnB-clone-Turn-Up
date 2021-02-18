@@ -12,10 +12,16 @@ class BookingsController < ApplicationController
     @booking.flat = @flat
     @booking.user_id?
     if @booking.save
-      redirect_to flat_path(@flat)
+      redirect_to pages_profile_path
     else
       render :new
     end
+  end
+
+  def destroy
+    @booking = Booking.find(params[:id])
+    @booking.destroy
+    redirect_to flat_path
   end
 
   private

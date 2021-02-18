@@ -1,13 +1,23 @@
-<h1> <%= @flat.name %> </h1>
+<div class = "profile-banner">
+  <div class = "container">
+  </div>
+</div>
 
 
-  <p> <%= @flat.address %> <br>
-  <%= @flat.description %> <br>
-  <%= @flat.occupancy %>
-  </p>
-
-<%= link_to 'New Booking',  new_flat_booking_path(@flat) %>
-<%= link_to 'Edit Flat',  edit_flat_path(@flat) %>
-<%= link_to 'Back to Flats',  flats_path %>
-<%= link_to  "Delete", flat_path(@flat), class: 'button',
-            method: :delete, data: { confirm: 'Are you sure?' } %>
+<div class = "container">
+  <div class = "show-card">
+    <div class = "show-card-img">
+      <%= cl_image_tag @flat.photo.key %>
+    </div>
+    <div class = "show-card-desc">
+      <div>
+        <h3> <%= @flat.name %> </h3>
+        <p> <%= @flat.address %> <br>
+        <%= @flat.description %> <br>
+        Sleeps <%= @flat.occupancy %>
+        </p>
+        <%= link_to 'New Booking',  new_flat_booking_path(@flat), class: "standard-button" %>
+      </div>
+    </div>
+  </div>
+</div>

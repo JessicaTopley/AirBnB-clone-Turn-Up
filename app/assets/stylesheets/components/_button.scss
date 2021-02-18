@@ -1,0 +1,17 @@
+.standard-button {
+  background-color: rgb(94, 166, 248);
+  border: none;
+  color: white;
+  padding: 12px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.standard-button:hover {
+  background-color: rgb(75, 153, 243);
+  text-decoration: none;
+  color: white;
+}
