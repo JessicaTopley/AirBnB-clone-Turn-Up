@@ -86,7 +86,7 @@ user4 = User.create!(email: "martin@gmail.com", password: "123456", first_name: 
 
   file = URI.open('https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1650&q=80.png')
   flat = Flat.new(
-    name: "Beautiful flat in Angel Islington",
+    name: "Beautiful flat in Angel",
     address: "416 St John St, London",
     description: "Great flat with #{rand(3..6)} rooms, #{Faker::House.room}, #{Faker::House.room} and #{Faker::House.room}. Fully furnished.",
     occupancy: rand(1..8),
