@@ -1,5 +1,4 @@
-<%# cl_image_tag flat.photo.key, alt:  %>
+<%= cl_image_tag flat.photo.key, height: 100, crop: :fill %>
 
-<h2><%= link_to "#{flat.name}", flat_path(flat) %></h2> -->
-<h1><%= flat.name %></h1>
+<h5><%= link_to "#{flat.name}", flat_path(flat) %></h5>
 <p><%= flat.address %></p>

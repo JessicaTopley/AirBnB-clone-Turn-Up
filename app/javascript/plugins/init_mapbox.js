@@ -32,6 +32,10 @@ const initMapbox = () => {
         .setLngLat([ marker.lng, marker.lat ])
         .addTo(map);
     });
+  if (mapElement) {
+    map.addControl(new MapboxGeocoder({ accessToken: mapboxgl.accessToken,
+                                mapboxgl: mapboxgl }));
+  }
 fitMapToMarkers(map, markers);
     // const addMarkersToMap = (map, markers) => {
       markers.forEach((marker) => {
