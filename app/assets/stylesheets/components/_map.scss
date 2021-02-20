@@ -6,3 +6,20 @@
   text-align: center;
   font-family: 'Open Sans', sans-serif;
 }
+
+.mapboxgl-popup-content > a > img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+.mapboxgl-popup-content h5 {
+  font-size: 16px;
+  padding-top: 16px;
+}
+
+.mapboxgl-popup-content p {
+  font-size: 14px;
+  padding-top: 3px;
+}
