@@ -16,6 +16,8 @@
             <p>booked from:</p>
             <p><%= booking.date_from %> to <%= booking.date_to %></p>
             <p>for <%= booking.guests %> guests</p>
+             <%= link_to  "Delete Booking", booking_path(booking), class: 'small-button',
+                method: :delete, data: { confirm: 'Are you sure?' } %>
           </div>
         </div>
       <% end %>

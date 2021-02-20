@@ -16,6 +16,25 @@
   // flex-basis: 0;
 }
 
+.booking-edit-card-img{
+  // background-color: white;
+  // padding: 50px;
+  // // box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  // border-radius: 2px;
+  margin: 24px 0;
+  align-items: center;
+  // display: grid;
+  // grid-template-columns: 1fr 1fr;
+  // grid-gap: 50px;
+  // padding: 30px;
+  // display: flex;
+  justify-content: space-between;
+  // flex-grow: 1;
+  // flex-shrink: 1;
+  // flex-basis: 0;
+  height: 406px;
+}
+
 @media (max-width: 992px) {
   .show-card {
     flex-direction: column;
