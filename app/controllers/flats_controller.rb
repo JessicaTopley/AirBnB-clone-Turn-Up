@@ -35,7 +35,7 @@ class FlatsController < ApplicationController
 
   def destroy
     @flat.destroy
-    redirect_to flats_path
+    redirect_to pages_profile_path
   end
 
   def edit
