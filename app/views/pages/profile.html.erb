@@ -23,7 +23,6 @@
 
     <div class = "profile-card">
       <h2>My Flats</h2>
-      <%= link_to 'Create new listing', new_flat_path, class: "standard-button" %>
       <% @user.flats.each do |flat| %>
         <div class = "profile-flat-card">
           <%= cl_image_tag flat.photo.key, height: 150, width: 150, crop: :fill %>
@@ -31,12 +30,13 @@
             <p><strong><%= flat.name %></strong></p>
             <p><%= flat.address %></p>
             <p>Listed occupancy: <%= flat.occupancy %></p>
-            <%= link_to 'Edit Flat', edit_flat_path(flat) %>
-            <%= link_to  "Delete", flat_path(flat), class: 'button',
+            <%= link_to 'Edit Flat', edit_flat_path(flat), class: 'small-button' %>
+            <%= link_to  "Delete", flat_path(flat), class: 'small-button',
                 method: :delete, data: { confirm: 'Are you sure?' } %>
           </div>
         </div>
       <% end %>
+      <%= link_to 'Create new listing', new_flat_path, class: "standard-button" %>
     </div>
   </div>
 </div>
