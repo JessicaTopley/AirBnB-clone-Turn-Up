@@ -1,8 +1,22 @@
-<h1>Create Booking</h1>
-
-<%= simple_form_for [@flat, @booking] do |f| %>
-<%= f.input :date_from %>
-<%= f.input :date_to %>
-<%= f.input :guests %>
-<%= f.submit %>
-<% end %>
+<div class = "profile-banner">
+  <h1>Make a booking</h1>
+</div>
+<div class="form-container" style="padding: 50px 0px">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-8 d-flex form show-card-img">
+        <%= cl_image_tag @flat.photo.key %>
+      </div>
+      <div class="col-6 col-md-4 d-flex form">
+        <%= simple_form_for [@flat, @booking] do |f| %>
+          <div class="form-inputs">
+            <%= f.input :date_from %>
+            <%= f.input :date_to %>
+            <%= f.input :guests %>
+            <%= f.submit(class: 'btn btn-primary')%>
+          </div>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
