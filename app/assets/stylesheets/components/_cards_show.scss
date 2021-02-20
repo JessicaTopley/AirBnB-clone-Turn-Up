@@ -23,7 +23,7 @@
 }
 
 .show-card-img {
-  
+
   flex-grow: 1;
 }
 
@@ -43,4 +43,8 @@
   padding: 24px;
   display: flex;
   align-content: center;
+}
+
+img{
+  object-fit: cover;
 }

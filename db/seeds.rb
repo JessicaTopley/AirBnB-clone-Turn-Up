@@ -18,7 +18,7 @@ user2 = User.create!(email: "miranda@gmail.com", password: "123456", first_name:
 user3 = User.create!(email: "catherine@gmail.com", password: "123456", first_name: "Catherine", last_name: "Maclellan")
 user4 = User.create!(email: "martin@gmail.com", password: "123456", first_name: "Martin", last_name: "Mwaka")
 
-  file = URI.open('https://images.unsplash.com/photo-1589834390005-5d4fb9bf3d32?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=668&q=80.png')
+  file = URI.open('https://images.unsplash.com/photo-1603794067602-9feaa4f70e0c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80.png')
   flat = Flat.new(
     name: "Entire flat in Covent Garden",
     address: "90 Long Acre, London",
@@ -29,10 +29,10 @@ user4 = User.create!(email: "martin@gmail.com", password: "123456", first_name: 
   flat.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
   flat.save!
 
-  file = URI.open('https://images.unsplash.com/photo-1556912172-45b7abe8b7e1?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8Mnw0NDcxNDU0fHxlbnwwfHx8&auto=format&fit=crop&w=800&q=60.png')
+  file = URI.open('https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80.png')
   flat = Flat.new(
     name: "Lovely flat in Marylebone",
-    address: "13 Crawford St, London",
+    address: "55 Baker St, Marylebone, London",
     description: "Great flat with #{rand(3..6)} rooms, #{Faker::House.room}, #{Faker::House.room} and #{Faker::House.room}. Fully furnished.",
     occupancy: rand(1..8),
     user: user1
@@ -40,7 +40,7 @@ user4 = User.create!(email: "martin@gmail.com", password: "123456", first_name: 
   flat.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
   flat.save!
 
- file = URI.open('https://images.unsplash.com/photo-1566152474719-8d79ca1a4c66?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwyNDMzNzk0fHxlbnwwfHx8&auto=format&fit=crop&w=800&q=60.png')
+ file = URI.open('https://images.unsplash.com/photo-1521782462922-9318be1cfd04?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1655&q=80.png')
   flat = Flat.new(
     name: "Cosy flat on Heathcote Street",
     address: "17 Heathcote Street, London",
@@ -51,7 +51,7 @@ user4 = User.create!(email: "martin@gmail.com", password: "123456", first_name: 
   flat.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
   flat.save
 
-  file = URI.open('https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?ixid=MXwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8Nnw0NDcxNDU0fHxlbnwwfHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60.png')
+  file = URI.open('https://images.unsplash.com/photo-1592247350271-c5efb34dd967?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80.png')
   flat = Flat.new(
     name: "Trendy flat in Dalston",
     address: "22 Ashwin St, London",
@@ -62,7 +62,7 @@ user4 = User.create!(email: "martin@gmail.com", password: "123456", first_name: 
   flat.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
   flat.save
 
-  file = URI.open('https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?ixid=MXwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8NXwyNTg1Mjc2NXx8ZW58MHx8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60.png')
+  file = URI.open('https://images.unsplash.com/photo-1499916078039-922301b0eb9b?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1100&q=80.png')
   flat = Flat.new(
     name: "Lovely flat in London",
     address: "11 York Way, London",
@@ -73,7 +73,7 @@ user4 = User.create!(email: "martin@gmail.com", password: "123456", first_name: 
   flat.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
   flat.save
 
-  file = URI.open('https://images.unsplash.com/photo-1595846519845-68e298c2edd8?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwyNTg1Mjc2NXx8ZW58MHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60.png')
+  file = URI.open('https://images.unsplash.com/photo-1586365116351-a2094a69e00e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1655&q=80.png')
   flat = Flat.new(
     name: "Vibrant flat in Camden",
     address: "56 Camden High St, London",
@@ -84,10 +84,10 @@ user4 = User.create!(email: "martin@gmail.com", password: "123456", first_name: 
   flat.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
   flat.save
 
-  file = URI.open('https://images.unsplash.com/photo-1585821570368-53a593a002be?ixid=MXwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MTd8MjU4NTI3NjV8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60.png')
+  file = URI.open('https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1650&q=80.png')
   flat = Flat.new(
-    name: "Beautiful flat in Tottenham",
-    address: "36 Park View Road, London",
+    name: "Beautiful flat in Angel",
+    address: "416 St John St, London",
     description: "Great flat with #{rand(3..6)} rooms, #{Faker::House.room}, #{Faker::House.room} and #{Faker::House.room}. Fully furnished.",
     occupancy: rand(1..8),
     user: user4
@@ -95,7 +95,7 @@ user4 = User.create!(email: "martin@gmail.com", password: "123456", first_name: 
   flat.photo.attach(io: file, filename: 'nes.png', content_type: 'image/png')
   flat.save
 
-  file = URI.open('https://images.unsplash.com/photo-1585670149967-b4f4da88cc9f?ixid=MXwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MjB8MjU4NTI3NjV8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60.png')
+  file = URI.open('https://images.unsplash.com/photo-1563298723-dcfebaa392e3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1648&q=80.png')
   flat = Flat.new(
     name: "Accessable flat in Kings Cross",
     address: "140 York Way, London",

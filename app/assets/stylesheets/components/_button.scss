@@ -1,5 +1,5 @@
 .standard-button {
-  background-color: rgb(94, 166, 248);
+  background-color: #333333;
   border: none;
   color: white;
   padding: 12px 32px;
@@ -11,7 +11,29 @@
 }
 
 .standard-button:hover {
-  background-color: rgb(75, 153, 243);
+  background-color: #404040;
   text-decoration: none;
   color: white;
 }
+
+
+.home-button {
+  background-color: #E2DA56;
+  border: none;
+  color: #333333;
+  padding: 12px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.home-button:hover {
+  background-color: #e5df66;
+  text-decoration: none;
+  color: #333333;
+}
+
+
+// #E2DA56

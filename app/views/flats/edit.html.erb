@@ -1,17 +1,22 @@
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-lg-auto">
-      <h1> Edit flat</h1>
-       <div class="d-flex form">
-      <%= simple_form_for @flat do |f| %>
+<div class = "profile-banner">
+  <h1>Edit Your <%= @flat.name %></h1>
+</div>
+<div class="form-container">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-6 col-md-4 d-flex form show-card-img" style="align-self: center">
+        <%= cl_image_tag @flat.photo.key %>
+      </div>
+      <div class="col-6 col-md-4 d-flex form">
+        <%= simple_form_for @flat do |f| %>
         <div class="form-inputs">
           <%= f.input :name %>
           <%= f.input :address %>
           <%= f.input :description %>
           <%= f.input :occupancy %>
-          <%= f.submit %>
-        </div>
-      <% end %>
+          <%= f.submit(class: 'standard-button') %>
+          </div>
+        <% end %>
       </div>
     </div>
   </div>
